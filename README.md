@@ -21,7 +21,7 @@ sudo rm -rf /usr/local/cuda*</br>
 sudo apt-key adv --fetch-keys http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pub
 echo "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64 /" | sudo tee /etc/apt/sources.list.d/cuda.list</br>
 sudo apt-get -o Dpkg::Options::="--force-overwrite" install cuda-10-0 cuda-drivers</br>
--Reboot and type</br>
+##### Reboot and type</br>
 echo 'export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}' >> ~/.bashrc</br>
 echo 'export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}' >> ~/.bashrc</br>
 source ~/.bashrc</br>
