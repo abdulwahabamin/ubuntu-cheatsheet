@@ -8,7 +8,7 @@ sudo nvidia-smi -i <target-gpu> -pm ENABLED
 
 #### Running command on startup
 -open terminal</br>
--sudo crontab</br>
+-crontab -e</br>
 -type '@reboot xxxx'</br>
 where xxxx is the command
 
