@@ -12,6 +12,9 @@ sudo nvidia-smi -i <target-gpu> -pm ENABLED
 -type '@reboot xxxx'</br>
 where xxxx is the command
 
+#### Creating a Symbolic link
+- ln -s /foler/location /path/to/create/shortcut</br>
+
 #### Installing nvidia drivers
 sudo apt-get update</br>
 sudo apt-get purge nvidia*</br>
