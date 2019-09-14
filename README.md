@@ -33,3 +33,8 @@ nvidia-smi</br>
 tar -xf cudnn-10.0-linux-x64-v7.5.0.56.tgz</br>
 sudo cp -R cuda/include/* /usr/local/cuda-10.0/include</br>
 sudo cp -R cuda/lib64/* /usr/local/cuda-10.0/lib64</br>
+
+#### Adding paths
+.bashrc</br>
+export PATH="/path/to/dir:$PATH"</br>
+source .bashrc</br>
