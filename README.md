@@ -38,3 +38,9 @@ sudo cp -R cuda/lib64/* /usr/local/cuda-10.0/lib64</br>
 .bashrc</br>
 export PATH="/path/to/dir:$PATH"</br>
 source .bashrc</br>
+
+#### Counting number of lines in a text file
+wc -l file.txt</br>
+
+#### Counting files in a folder
+ls | wc -l
