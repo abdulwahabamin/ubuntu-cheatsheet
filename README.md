@@ -44,3 +44,6 @@ wc -l file.txt</br>
 
 #### Counting files in a folder
 ls | wc -l
+
+#### Replacing text in a file
+sed -i 's:/File/Path:/New/Dir:g' test.csv
