@@ -47,3 +47,7 @@ ls | wc -l
 
 #### Replacing text in a file
 sed -i 's:/File/Path:/New/Dir:g' test.csv
+
+#### Change Nvidia gpu fan speed
+sudo nvidia-xconfig </br>
+sudo nvidia-xconfig --cool-bits=4
