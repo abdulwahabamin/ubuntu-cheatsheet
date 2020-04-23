@@ -51,3 +51,7 @@ sed -i 's:/File/Path:/New/Dir:g' test.csv
 #### Change Nvidia gpu fan speed
 sudo nvidia-xconfig </br>
 sudo nvidia-xconfig --cool-bits=4
+
+#### Underclocking by changing power limit on gpu
+sudo nvidia-smi -i gpu_num -pl power </br>
+NOTE: Change gpu_num and power according to your gpu specs
