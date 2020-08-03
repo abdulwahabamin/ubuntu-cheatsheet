@@ -60,3 +60,6 @@ NOTE: Change gpu_num and power according to your gpu specs
 wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb </br>
 sudo dpkg -i teamviewer_*.deb </br>
 sudo apt-get -f install
+
+### Copying and renaming files
+for file in *.txt; do cp $file ../comb/h_$file; done
