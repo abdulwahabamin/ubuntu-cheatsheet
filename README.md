@@ -23,16 +23,16 @@ sudo apt-get autoclean</br>
 sudo rm -rf /usr/local/cuda*</br>
 sudo apt-key adv --fetch-keys http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pub
 echo "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64 /" | sudo tee /etc/apt/sources.list.d/cuda.list</br>
-sudo apt-get -o Dpkg::Options::="--force-overwrite" install cuda-10-0 cuda-drivers</br>
+sudo apt-get -o Dpkg::Options::="--force-overwrite" install cuda-11-0 cuda-drivers</br>
 ##### Reboot and type</br>
-echo 'export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}' >> ~/.bashrc</br>
-echo 'export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}' >> ~/.bashrc</br>
+echo 'export PATH=/usr/local/cuda-11.0/bin${PATH:+:${PATH}}' >> ~/.bashrc</br>
+echo 'export LD_LIBRARY_PATH=/usr/local/cuda-11.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}' >> ~/.bashrc</br>
 source ~/.bashrc</br>
 sudo ldconfig</br>
 nvidia-smi</br>
-tar -xf cudnn-10.0-linux-x64-v7.5.0.56.tgz</br>
-sudo cp -R cuda/include/* /usr/local/cuda-10.0/include</br>
-sudo cp -R cuda/lib64/* /usr/local/cuda-10.0/lib64</br>
+tar -xf cudnn-11.0-linux-x64-v8.0.2.39.tgz</br>
+sudo cp -R cuda/include/* /usr/local/cuda-11.0/include</br>
+sudo cp -R cuda/lib64/* /usr/local/cuda-11.0/lib64</br>
 
 #### Adding paths
 .bashrc</br>
