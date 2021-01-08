@@ -17,14 +17,14 @@ where xxxx is the command
 
 #### Installing nvidia drivers
 sudo apt-get update</br>
-sudo apt-get purge nvidia*</br>
-sudo apt-get autoremove</br>
-sudo apt-get autoclean</br>
+sudo apt-get purge nvidia* -y</br>
+sudo apt-get autoremove -y</br>
+sudo apt-get autoclean -y</br>
 sudo rm -rf /usr/local/cuda*</br>
 sudo apt-key adv --fetch-keys http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pub </br>
 echo "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64 /" | sudo tee /etc/apt/sources.list.d/cuda.list</br>
 sudo apt-get update</br>
-sudo apt-get -o Dpkg::Options::="--force-overwrite" install cuda-11-0 cuda-drivers</br>
+sudo apt-get -o Dpkg::Options::="--force-overwrite" install cuda-11-0 cuda-drivers -y</br>
 ##### Reboot and type</br>
 echo 'export PATH=/usr/local/cuda-11.0/bin${PATH:+:${PATH}}' >> ~/.bashrc</br>
 echo 'export LD_LIBRARY_PATH=/usr/local/cuda-11.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}' >> ~/.bashrc</br>
