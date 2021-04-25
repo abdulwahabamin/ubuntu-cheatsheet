@@ -64,3 +64,7 @@ sudo apt-get -f install
 
 #### Copying and renaming files
 for file in *.txt; do cp $file ../comb/h_$file; done
+
+#### Add new user and add to docker group
+sudo useradd username </br>
+sudo usermod -aG docker username
