@@ -67,4 +67,10 @@ for file in *.txt; do cp $file ../comb/h_$file; done
 
 #### Add new user and add to docker group
 sudo useradd username </br>
-sudo usermod -aG docker username
+sudo groupadd groupname </br>
+sudo usermod -aG docker username </br>
+sudo tail /etc/group
+
+#### Folder access permission
+change folder ownership to another group - sudo chown -R owner:groupname /path/to/folder </br>
+change folder read write access (775 is read/write/execute for owner and group and read for others) - sudo chmod 775 /path/to/folder </br>
