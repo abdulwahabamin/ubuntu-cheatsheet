@@ -74,3 +74,4 @@ sudo tail /etc/group
 #### Folder access permission
 change folder ownership to another group - sudo chown -R owner:groupname /path/to/folder </br>
 change folder read write access (775 is read/write/execute for owner and group and read for others) - sudo chmod 775 /path/to/folder </br>
+change file access to user and group only - sudo chmod 770 /path/to/file </br>
