@@ -33,7 +33,7 @@ sudo ldconfig</br>
 nvidia-smi</br>
 tar -xf cudnn-11.0-linux-x64-v8.0.2.39.tgz</br>
 sudo cp -R cuda/include/* /usr/local/cuda-11.4/include</br>
-sudo cp -R cuda/lib64/* /usr/local/cuda-11.4lib64</br>
+sudo cp -R cuda/lib64/* /usr/local/cuda-11.4/lib64</br>
 
 #### Adding paths
 .bashrc</br>
